@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/icon.css">
+		<link rel="stylesheet" type="text/css" href="css/general.css">
+		<link rel="stylesheet" type="text/css" href="css/sideMenu.css">
+		<link rel="stylesheet" type="text/css" href="css/imc.css">
+		<title>title</title>
+	</head>
+	<body>
+		<header class="flex main_h">
+			<a href="index.html"><span class="icon-home"></span></a>
+			<span id="icon-menu" class="icon-menu"></span>
+			
+			<div id="main-menu" class="flex menu hide">
+				<div class="menu-shadow"></div>
+				<nav class="nav-menu">
+					<ul>
+						<li id="close-menu"><span class="icon-cross"></span></li>
+						<li><a href="imc.html">Índice de massa corporal (<abbr>imc</abbr>)</a></li>
+						<li><a href="#">link 2b</a></li>
+						<li><a href="#">link 3c</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div class="main">
+
+			<main class="flex">
+				<section>
+					<h1>Índice de Massa Corporal (<abbr>imc</abbr>)</h1>
+					<p>A classificação do índice de massa corpórea (IMC), pode ajudar a identificar obesidade ou desnutrição em crianças, adolescentes, adultos e idosos. É uma medida utilizada internacionamente que permite identificar se uma pessoa está no peso ideal.</p>
+				</section>
+
+				<section class="secao-imc">
+					<h1>Calcular IMC</h1>
+					<p>Preencha os campos abaixo e descubra o seu IMC</p>
+
+					<form>
+						<div class="flex">
+							<div class="imc-left-side">
+								<div class="flex grupo1">
+									<label for="altura">Altura <span class="medida">(cm)</span>:</label>
+									<input class="text" type="text" id="altura" name="altura" placeholder="Exemplo: 177">
+								</div>
+								<div class="flex grupo1">
+									<label for="peso">Peso <span class="medida">(kg)</span>:</label>
+									<input class="text" type="text" id="peso" name="peso" placeholder="Exemplo: 81">
+								</div>
+								<div class="grupo2">
+									<button id="btn-calcular-imc" class="btn-imc">Calcular</button>
+								</div>
+							</div>
+							<div class="flex imc-right-side">
+								<span id="resultado-imc" class="resposta">Resultado: </span>
+							</div>
+						</div>
+					</form>
+				</section>
+
+				<section>
+					<h1><caption>Tabela <abbr>imc</abbr></caption></h1>
+					
+					<div class="flex tabela-imc-container">
+						<table class="tabela-imc">						
+							<thead>
+								<tr>
+									<th>IMC</th>
+									<th>Classificação do IMC</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>< 16</td>
+									<td>Magreza grave</td>
+								</tr>
+								<tr>
+									<td>16 a < 17</td>
+									<td>Magreza moderada</td>
+								</tr>
+								<tr>
+									<td>17 a < 18,5</td>
+									<td>Magreza leve</td>
+								</tr>
+								<tr>
+									<td>18,5 a < 25</td>
+									<td>Saudável</td>
+								</tr>
+								<tr>
+									<td>25 a < 30</td>
+									<td>Sobrepeso</td>
+								</tr>
+								<tr>
+									<td>30 a < 35</td>
+									<td>Obesidade Grau I</td>
+								</tr>
+								<tr>
+									<td>35 a < 40</td>
+									<td>Obesidade Grau II (severa)</td>
+								</tr>
+								<tr>
+									<td>> 40</td>
+									<td>Obesidade Grau III (mórbida)</td>
+								</tr>
+							</tbody>
+						</div>
+					</table>
+				</section>
+
+			</main>
+
+		</div>
+
+		<footer>
+			<p>&copy; Footer - 2018...</p>
+		</footer>
+
+		<script type="text/javascript" src="js/menu.js"></script>
+		<script type="text/javascript" src="js/imc.js"></script>
+	</body>
+</html>

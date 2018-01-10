@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+*{
+	box-sizing: border-box;
+	font-size: 1em;
+}
+html, body{
+	margin: 0 auto;
+	margin-bottom: 1.5em;
+	min-width: 220px;
+	max-width: 1024px;
+}
+body{
+	font-family: 'Slabo 27px', serif, arial;
+}
+a{
+	text-decoration: none;
+	color: #005943;
+}
+p{
+	text-align: justify;
+	margin: .5em 0;
+}
+main{
+	padding: 0 2%;
+	margin: 0;
+	height: 100%;
+}
+main h1{
+	font-weight: bold;
+	margin-bottom: .5em;
+	margin: .5em 0 .5em 0;
+	font-size: 1.2em;	
+}
+
+.flex{
+	display: flex;
+}
+.main_h{
+	background-color: #08af86;
+	padding: .5em;
+	justify-content: space-between;
+	align-items: center;
+}
+
+abbr{
+	text-transform: uppercase;
+}
+
+footer{
+	background-color: #005943;
+ 	padding: .3em;
+ 	font-size: .8em;
+ 	text-align: center;
+ 	color: #ffffff;
+ 	position: fixed;;
+ 	bottom: 0;
+ 	width: 100%;
+ 	max-width: 1024px;
+}
+
+@media only screen and (min-width: 425px){
+
+
+
+}

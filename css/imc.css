@@ -1,0 +1,135 @@
+form{
+	line-height: 1.3em;
+	margin: 0 .4em .4em .4em;
+}
+input{
+	font-size: 1em;
+}
+main{
+	flex-direction: column;
+}
+section{
+	border: .05em solid #bed1cc;
+	border-radius: 2%;
+	margin: .5em 0;
+
+}
+	section h1{
+		margin-top: 0;
+		background-color: #17d1a7;
+		padding: .3em;
+		border-radius: 1% 1% 0 0;
+		color: #ffffff;
+		text-shadow: 0 .03em .04em #000;
+	}
+	section p{
+		margin: 0 .5em .2em .5em;
+	}
+	section .grupo1{
+		justify-content: space-between;
+	}
+		.grupo1 .medida{
+			font-size: .8em;
+			color: #494c4b;
+		}
+
+	.imc-left-side{
+		flex: 1.4;
+	}
+	.imc-right-side{
+		flex: 1;
+		margin: 0 auto;
+		padding: 0 auto;
+		align-items: center;
+	}
+		.resposta{
+			color: #ff0000;
+			text-align: center;
+
+			width: 100%;
+		}
+
+.text{
+	width: 50%;
+	height: 1.5em;
+	margin-bottom: .2em;
+}
+	.text::placeholder{
+		font-size: .8em;
+	}
+
+.inputs{
+	background-color: lightcoral;
+	width: 80%;
+	flex-flow: row wrap;
+	align-items: flex-end;
+}
+	.inputs label{
+		
+	}
+
+.btn-imc{
+	margin: .5em .5em 0 0;
+	background-color: #0d9678;
+	border: 0 solid #5f9186;
+	color: #ffffff;
+	padding: .4em .4em .4em .4em;
+	width: 60%;
+	max-width: 120px;
+}
+	.btn-imc:hover, 
+	.btn-imc:focus{
+		background-color: #0eb792;
+	}
+	.btn-imc:active{
+		box-shadow: 0 0 5px #000000;
+	}
+
+.tabela-imc{
+	font-size: .9em;
+}
+	.tabela-imc tr, td, th{
+		border: .1em solid #638980;
+	}
+	.tabela-imc thead{
+		background-color: #058c6d;
+		color: #fff;
+	}
+	.tabela-imc th,td{
+		padding: .5em;
+	}
+	.tabela-imc tbody tr:hover{
+		background-color: #abd1c8;
+		font-weight: bold;
+	}
+	.tabela-imc td:nth-child(2n+1){
+		text-align: center;
+	}
+
+	.tabela-imc-container{
+		justify-content: space-around;
+		padding-bottom: 1em;
+	}
+
+@media only screen and (min-width: 768px){
+	main{
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+		.main_h{
+			text-align: center;
+			display: block;
+			padding: 0;
+		}
+		.main_h .icon-menu{
+			display: none;
+		}
+		.main_h .icon-home{
+			font-size: 2em;
+			padding-bottom: 1em;	
+		}
+	section{
+		width: 49%;
+	}
+
+}
